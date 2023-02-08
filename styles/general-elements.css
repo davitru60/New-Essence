@@ -32,7 +32,7 @@ header img{
     width: 100px;
 }
 
-
+/*Navigation bar*/
 nav{
     display: flex;
     position:relative;
@@ -46,4 +46,16 @@ nav a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 25px;
+}
+
+
+/*Button style*/
+.generic-btn{
+    background-color: #1A512C;
+    font-size: 20pxs;
+    color: white;
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    border-style: none;
 }

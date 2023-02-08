@@ -3,9 +3,9 @@ function createHeader() {
     header.innerHTML = `
     <img src="/Imagenes/NELogo.png">
     <nav>
-        <a href="#"> HOME</a>
-        <a href="#"> TIENDA</a>
-        <a href="#"> BLOG</a>
+        <a href="./main.html"> HOME</a>
+        <a href="./market.html"> TIENDA</a>
+        <a href="./blog.html"> BLOG</a>
     </nav>
     `;
     return header;

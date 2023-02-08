@@ -50,16 +50,6 @@
 
 }
 
-.card-1-btn{
-    background-color: #1A512C;
-    font-size: 20pxs;
-    color: white;
-    height: 50px;
-    width: 100px;
-    border-radius: 30px;
-    border-style: none;
-}
-
 @media (max-width:1350px){
 
     #card-1-title{

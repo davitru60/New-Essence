@@ -1,0 +1,61 @@
+#main-content{
+    display:flex;
+    background-color: antiquewhite;
+    justify-content: center;
+    height: 180vh;
+}
+
+.container{
+    display:flex;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    flex-flow: row wrap;
+    height:50vh;
+    top:25px;
+    width: 150vh;
+}
+
+.article{
+    padding-top: 25px;
+}
+
+.article img{
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+}
+
+.article p{
+   position:relative;
+   width: 50%;
+   text-align: center;
+   left:10px;
+ 
+}
+
+.price {
+    font-size: 14px;
+  }
+  
+.decimal {
+    position: relative;
+    top:100px;
+    font-size: 20px;
+
+  }
+
+.price, .decimal{
+    position:relative;
+    top:30px;
+    right:75px
+    
+}   
+
+.generic-btn{
+    position:relative;
+    top:70px;
+    right:190px;
+}
+
