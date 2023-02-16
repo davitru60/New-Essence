@@ -10,14 +10,15 @@ body{
 
 
 header{
+    position:fixed;
+    width: 100%;
     padding:15px;
     display: flex;
     justify-content: flex-end;
+    height:75px;
+    z-index: 100; /*Fix the content overlapping*/
 }
 
-footer{
-    padding:35px;
-}
 
 header, footer{
     background-color: #210124;
@@ -25,19 +26,23 @@ header, footer{
     
 }
 
+footer{
+    padding:35px;
+}
+
 header img{
     position: relative;
-    right:55%;
-    height: 100px;
-    width: 100px;
+    right:50%;
+    height: 80px;
+    width: 80px;
 }
 
 /*Navigation bar*/
 nav{
     display: flex;
     position:relative;
-    right:45%;
-    gap:100px;
+    right:5%;
+    gap:80px;
     justify-content: flex-end;
     align-items: center;
 }
@@ -45,7 +50,7 @@ nav{
 nav a{
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 25px;
+    font-size: 20px;
 }
 
 
@@ -58,4 +63,17 @@ nav a{
     width: 100px;
     border-radius: 30px;
     border-style: none;
+}
+
+#log-in-btn{
+    position: relative;
+    right:2%;
+    height:40px;
+    width: 40px;
+}
+
+#register-button{
+    height: 25px;
+    width: 55px;
+    right:5%;
 }

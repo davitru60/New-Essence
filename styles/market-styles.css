@@ -2,7 +2,7 @@
     display:flex;
     background-color: antiquewhite;
     justify-content: center;
-    height: 180vh;
+    height: 250vh;
 }
 
 .container{
@@ -10,15 +10,17 @@
     position:relative;
     justify-content: center;
     align-items: center;
-    gap:50px;
     flex-flow: row wrap;
+    gap:35px;
     height:50vh;
-    top:25px;
     width: 150vh;
+    top:75px;
 }
 
 .article{
-    padding-top: 25px;
+    position: relative;
+    left:5%;
+    padding-top: 70px;
 }
 
 .article img{
@@ -56,6 +58,6 @@
 .generic-btn{
     position:relative;
     top:70px;
-    right:190px;
+    right:50%;
 }
 
