@@ -53,6 +53,10 @@ nav a{
     font-size: 20px;
 }
 
+#main-content{
+    background-color: #DBF9F0
+}
+
 
 /*Button style*/
 .generic-btn{

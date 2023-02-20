@@ -1,63 +1,61 @@
-#main-content{
-    display:flex;
-    background-color: antiquewhite;
+#main-content {
+    display: flex;
     justify-content: center;
-    height: 250vh;
+    height: 200vh;
 }
 
-.container{
-    display:flex;
-    position:relative;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    gap:35px;
-    height:50vh;
-    width: 150vh;
-    top:75px;
-}
-
-.article{
+.container {
+    display: grid;
     position: relative;
-    left:5%;
-    padding-top: 70px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    height: 50vh;
+    width: 150vh;
+    top: 12.5%;
 }
 
-.article img{
+.article {
+    position: relative;
+    left: 5%;
+    height: 325px;
+
+}
+
+.article img {
+    position:relative;
     width: 150px;
     height: 150px;
+    top:20%;
+    right:25%;
     background-color: brown;
 }
 
-.article p{
-   position:relative;
-   width: 50%;
-   text-align: center;
-   left:10px;
- 
-}
-
-.price {
-    font-size: 14px;
-  }
-  
-.decimal {
+.article p {
+    display: inline-block;
     position: relative;
-    top:100px;
-    font-size: 20px;
+    width: 50%;
+    top:-31.5%;
+    left: 25%;
+    text-align: center;
 
-  }
-
-.price, .decimal{
-    position:relative;
-    top:30px;
-    right:75px
-    
-}   
-
-.generic-btn{
-    position:relative;
-    top:70px;
-    right:50%;
 }
 
+.price{
+    position: relative;
+    top:19.5%;
+    left:60%;
+    font-size: 25px;
+}
+
+span.decimal{
+    position:relative;
+    bottom:10px;
+    right: 5px;
+    font-size: 20px;
+}
+
+.generic-btn {
+    position: absolute;
+    left:35%;
+    top:82.5%;
+}
