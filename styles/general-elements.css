@@ -20,21 +20,17 @@ header{
 }
 
 
+header #logo-1{
+    position: relative;
+    right:550px;
+    height: 80px;
+    width: 230px;
+}
+
+
 header, footer{
     background-color: #210124;
     text-align: center;
-    
-}
-
-footer{
-    padding:35px;
-}
-
-header img{
-    position: relative;
-    right:50%;
-    height: 80px;
-    width: 80px;
 }
 
 /*Navigation bar*/
@@ -51,25 +47,76 @@ nav a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 20px;
+    padding: 10px;
 }
 
-#main-content{
-    background-color: #DBF9F0
-}
-
-
-/*Button style*/
-.generic-btn{
-    background-color: #1A512C;
-    font-size: 20pxs;
-    color: white;
-    height: 50px;
-    width: 100px;
+/*Hover*/
+nav a.op1:hover:nth-child(1), 
+a.op2:hover:nth-child(2) , a.op3:hover:nth-child(3){
+    color: #210124;
+    background-color: white;
     border-radius: 30px;
-    border-style: none;
 }
 
-#log-in-btn{
+
+/*Bar tooltip*/
+nav a.menu-option:hover::after , a.foot-tooltip:hover::after {
+    display: inline-block;
+    background-color: rgb(253, 253, 253);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 100%;
+    transform: translateX(-50%);
+    font-size: 15px;
+  }
+
+nav a.op4:hover::after{
+    content: "Inicio de sesión";
+    left:74%;
+}
+
+nav a.op5:hover::after{
+    content: "Registro";
+    right:-3.5%;
+}
+
+a.instagram:hover::after{
+    content: "Instagram";
+    top:-40px;
+    left:29%;
+    color: white;
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+}
+
+a.facebook:hover::after{
+    content: "Facebook";
+    top:-40px;
+    left:42.2%;
+    color: white;
+    background: #3b5998 
+}
+
+a.twitter:hover::after{
+    content: "Twitter";
+    top:-40px;
+    left:55.2%;
+    color: white;
+    background: #1DA1F2
+}
+
+a.outlook:hover::after{
+    content: "Outlook";
+    top:-40px;
+    left:70%;
+    color: white;
+    background: #0072C6
+}
+
+
+/*Log-in icon and footer icons*/
+#log-in-btn , #social-media-icon{
     position: relative;
     right:2%;
     height:40px;
@@ -81,3 +128,61 @@ nav a{
     width: 55px;
     right:5%;
 }
+
+
+#main-content{
+    background-image: linear-gradient(to right top, #dbf9f0, #cbf2e6, #bcebdd, #ace3d3, #9cdcc9);
+}
+
+/*Footer part*/
+footer{
+    padding:35px;
+    height: 23vh;
+}
+
+#creator-information{
+    position: relative;
+    top:18.5%;
+    width: 20%;
+    text-align: start;
+
+}
+
+#creator-information span{
+    color: white;
+}
+
+/*Social media container*/
+#social-media{
+    display: flex;
+    position: relative;
+    top:60px;
+    gap: 150px;
+    justify-content: center;
+}
+
+/*Footer logo*/
+#logo-2{
+    position: relative;
+    bottom:55%;
+    left:38%;
+    height:80px;
+    width: 80px;
+}
+
+.outlook-icon{
+    height: 40px;
+    width: 75px;
+
+}
+/*Button style*/
+.generic-btn{
+    background-color: #1A512C;
+    font-size: 16px;
+    color: white;
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    border-style: none;
+}
+

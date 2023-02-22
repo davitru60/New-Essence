@@ -6,6 +6,8 @@
     height: 100vh;
 }
 
+
+
 .card-1{
     position:relative;
     top:7.5%;
@@ -13,16 +15,20 @@
     width: 65%;
     height: 65%;
     background-color: white;
-    border-radius: 3px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+
+}
+
+.card-1, .card-1-image img{
+    border-radius: 10px;
 }
 
 .card-1-image{
-    background-color: aquamarine;
     width:35%;
 }
 
 .card-1-article{
-    width: 65%;
+    width: 75%;
     height: 100%;
     display:flex;
     flex-flow: column;
