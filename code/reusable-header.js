@@ -3,8 +3,8 @@ function createHeader() {
     header.innerHTML = `
 
 
-    <a href="../index.html"> 
-        <img src="../images/Logo_2.png" id="logo-1">
+    <a href="./index.html"> 
+        <img src="./images/Logo_2.png" id="logo-1">
     </a>
     <nav>
         <a href="../index.html" class="menu-option op1"> HOME</a>
