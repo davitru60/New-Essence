@@ -3,7 +3,7 @@ function createHeader() {
     header.innerHTML = `
 
 
-    <a href="../index.html"> 
+    <a href="/index.html"> 
         <img src="../images/Logo_2.png" id="logo-1">
     </a>
     <nav>
