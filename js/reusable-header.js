@@ -9,8 +9,8 @@ function createHeader() {
     <nav>
         <a href="/index.html" class="menu-option op1"> HOME</a>
         <a href="/html-files/market.html" class="menu-option op2"> TIENDA</a>
-        <a href="/html-files/blog.html" class="menu-option op3"> BLOG</a>
-        <a href="./log-in.html" class="menu-option op4"> 
+        <a href="/blog.html" class="menu-option op3"> BLOG</a>
+        <a href="/html-files/log-in.html" class="menu-option op4"> 
             <img src="/images/log-in-button.png" id="log-in-btn">
         </a>
 
