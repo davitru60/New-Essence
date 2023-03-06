@@ -8,7 +8,7 @@ function createFooter(){
 
         <div id="social-media">
             <a href="https://www.instagram.com/" class="foot-tooltip instagram"> 
-                <img src="/images/social-media/Instagram_icon.png.webp" id="social-media-icon">
+                <img src="../images/social-media/Instagram_icon.png.webp" id="social-media-icon">
             </a>
             <a href="https://es-la.facebook.com/" class="foot-tooltip facebook"> 
                 <img src="/images/social-media/facebook-logo.png" id="social-media-icon">
