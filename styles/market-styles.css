@@ -1,9 +1,16 @@
+@font-face {
+    font-family: 'Alice-Regular';
+    src: url("../fonts/Alice-Regular.ttf");
+}
+
+
 #main-content {
     display: flex;
     justify-content: center;
-    height: 190vh;
+    height: 200vh;
 }
 
+/*Contenedor donde se alojan los articulos*/
 .container {
     display: grid;
     position: relative;
@@ -15,6 +22,7 @@
     top: 11.5%;
 }
 
+/*Posicionamiento de cada articulo*/
 .article {
     position: relative;
     left: 5%;
@@ -27,16 +35,18 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
 }
 
+/*Transformacion de la imagen al pasar el curso*/
 .article:hover img{
     transform: scale(1.1);
     overflow: hidden;
 }
 
+/*Posicionamiento de la imagen dentro del articulo*/
 .article img {
     position:absolute;
     width: 150px;
     height: 150px;
-    top:20%;
+    top:21%;
     right:26%;
     background-color: brown;
     transition: all .5s;
@@ -45,6 +55,7 @@
     
 }
 
+/*Nombre del producto*/
 .article p {
     display: inline-block;
     position: absolute;
@@ -55,11 +66,21 @@
 
 }
 
+
+.article p , .price , span.decimal{
+    font-family: 'Alice-Regular';
+    font-size: 18px;
+}
+
+.price , span.decimal{
+    font-weight: bold;
+}
+
 .price{
     position: absolute;
     top:69%;
     left:60%;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 span.decimal{

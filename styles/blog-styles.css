@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 450vh;
+    height: 550vh;
     flex-flow: row wrap;
     gap:50px;
 }
@@ -14,19 +14,18 @@
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    bottom: 38%;
+    bottom: 40.8%;
     gap:35px;
     height:50vh;
     width: 175vh;
 
 }
 
-
 .card{
     position:relative;
     display: flex;
     width: 90%;
-    height: 720px;
+    height: 900px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
@@ -59,27 +58,12 @@
 }
 
 #card-description , #card-title{
-    padding: 25px;
+    padding: 15px;
 }
 
 #card-description{
     position: relative;
     font-size: 15px;
-    bottom : 60px;
+    bottom : 55px;
 }
 
-
-@media (max-width:1350px){
-
-    #card-title{
-        font-size: 20px;
-      
-    }
-
-    #card-description{
-        position: relative;
-        font-size: 15px;
-        bottom : 60px;
-    }
-    
-}

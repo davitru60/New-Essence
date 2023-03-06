@@ -2,7 +2,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 220vh;
+    height: 215vh;
 }
 
 .container{
@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  bottom:16%;
+  bottom:18%;
   height:125vh;
   width: 175vh;
 
@@ -29,14 +29,15 @@
     border-radius: 10px;
     box-shadow: 2px 2px 10px #ccc;
     top:15%;
-    height: 125%;
+    height: 135%;
     width: 35%;
   }
 
    label {
     display: flex;
     position: relative;
-    bottom:2.5%;
+    bottom:1%;
+    right: 1%;
     font-size: 18px;
     margin-bottom: 10px;
   }
@@ -46,7 +47,8 @@
     position: relative;
     width: 97%;
     padding: 10px;
-    bottom:2.5%;
+    bottom:1%;
+    right:1%;
     margin-bottom: 20px;
     font-size: 18px;
     border-radius: 5px;
@@ -60,6 +62,6 @@
   .generic-btn{
     position:absolute;
     width: 150px;
-    top:93%;
+    top:95%;
     left:67%;
 }

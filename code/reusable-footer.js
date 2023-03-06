@@ -19,7 +19,7 @@ function createFooter(){
             </a>
 
             <a href="mailto:newessence@example.com" class="foot-tooltip outlook"> 
-                <img src="/images/social-media/outlook-icon.png" class="social-media-icon outlook-icon">
+                <img src="/images/social-media/outlook-icon.png" class="outlook-icon">
             </a>
         </div>
 

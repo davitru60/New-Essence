@@ -1,5 +1,5 @@
-#main-content{
-    position:relative;
+#main-content {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,9 +8,9 @@
 
 
 
-.card-1{
-    position:relative;
-    top:7.5%;
+.card-1 {
+    position: relative;
+    top: 7.5%;
     display: flex;
     width: 65%;
     height: 65%;
@@ -19,56 +19,115 @@
 
 }
 
-.card-1, .card-1-image img{
+.card-1,
+.card-1-image img {
     border-radius: 10px;
 }
 
-.card-1-image{
-    width:35%;
+.card-1-image {
+    width: 35%;
 }
 
-.card-1-article{
+.card-1-image img {
+    width: 300px;
+    height: 100%;
+}
+
+.card-1-article {
     width: 75%;
     height: 100%;
-    display:flex;
+    display: flex;
     flex-flow: column;
+    z-index: 1;
 }
 
-#card-1-title{
-  font-size: 25px;
+#card-1-title {
+    font-size: 25px;
 
 }
 
-#card-1-description , #card-1-title{
+#card-1-description, #card-1-title {
     padding: 25px;
 }
 
-#card-1-description{
+#card-1-description {
     position: relative;
     font-size: 20px;
-    bottom : 60px;
+    bottom: 60px;
 }
 
-#card-1-button{
+#card-1-button {
     position: relative;
-    display:flex;
+    display: flex;
     justify-content: center;
     left: 25%;
-    bottom:45px;
+    bottom: 45px;
 
 }
 
-@media (max-width:1350px){
 
-    #card-1-title{
-        font-size: 20px;
-      
+
+@media (width<=1292px) {
+    .card-1 {
+        height: 65%;
     }
 
-    #card-1-description{
+    .card-1, .card-1-image img {
+        border-radius: 10px;
+    }
+
+    .card-1-image {
+        width: 55%;
+    }
+
+    .card-1-image img {
+        width: 300px;
+        height: 100%;
+    }
+
+
+    #card-1-button {
+        position: absolute;
+        left: 80%;
+        bottom: 45px;
+    }
+
+}
+
+
+@media (width<=1000px) {
+    #card-1-title {
+        font-size: 20px;
+
+    }
+
+    .card-1 {
         position: relative;
-        font-size: 15px;
-        bottom : 60px;
+        top: 7.5%;
+        display: flex;
+        height: 65%;
+
+    }
+}
+
+@media (width<=950px) {
+    #main-content {
+        height: 120vh;
     }
     
+    .card-1 {
+        position: relative;
+        top: 7.5%;
+        display: flex;
+        width: 65%;
+        height: 85%;
+    
+    }
+
+    .card-1-article {
+        position: relative;
+        top:25%;
+        
+    }
+
 }

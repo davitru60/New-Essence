@@ -1,66 +1,78 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
+/*Regla para añadir una fuente externa*/
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url("../fonts/OpenSans-Regular.ttf");
 }
 
-body{
+* {
+    font-family: 'OpenSans-Regular', sans-serif;
+
+}
+
+body {
     box-sizing: border-box;
-    margin:0;
-    padding:0;   
+    margin: 0;
+    padding: 0;
+
 }
 
 
-header{
-    position:fixed;
+header {
+    position: fixed;
     width: 100%;
-    padding:15px;
+    padding: 15px;
     display: flex;
     justify-content: flex-end;
-    height:75px;
-    z-index: 100; /*Fix the content overlapping*/
+    height: 75px;
+    z-index: 100; /*Arregla el solapamiento de contenido*/
 }
 
 
-header #logo-1{
+/*Posición del logo de la cabecera*/
+header #logo-1 {
     position: relative;
-    right:550px;
+    right: 550px;
     height: 80px;
     width: 230px;
 }
 
 
-header, footer{
+header,footer {
     background-color: #210124;
     text-align: center;
 }
 
-/*Navigation bar*/
-nav{
+/*Barra de navegación*/
+nav {
     display: flex;
-    position:relative;
-    right:5%;
-    gap:80px;
+    position: relative;
+    right: 5%;
+    gap: 80px;
     justify-content: flex-end;
     align-items: center;
+
 }
 
-nav a{
+nav a {
+    font-family: 'OpenSans-Regular', sans-serif;;
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 20px;
     padding: 10px;
+
 }
 
 /*Hover*/
-nav a.op1:hover:nth-child(1), 
-a.op2:hover:nth-child(2) , a.op3:hover:nth-child(3){
+nav .op1:hover, .op2:hover, .op3:hover{
     color: #210124;
     background-color: white;
     border-radius: 30px;
 }
 
 
-/*Bar tooltip*/
-nav a.menu-option:hover::after , a.foot-tooltip:hover::after {
+/*Bar tooltip */
+nav .menu-option:hover::after,
+.foot-tooltip:hover::after {
     display: inline-block;
     background-color: rgb(253, 253, 253);
     color: rgb(0, 0, 0);
@@ -70,113 +82,115 @@ nav a.menu-option:hover::after , a.foot-tooltip:hover::after {
     top: 100%;
     transform: translateX(-50%);
     font-size: 15px;
-  }
+}
 
-nav a.op4:hover::after{
+
+/*Contenido del tooltip de inicio de sesion*/
+nav .op4:hover::after {
     content: "Inicio de sesión";
-    left:74%;
+    left: 74%;
 }
 
-nav a.op5:hover::after{
+/*Contenido del tooltip de registro*/
+nav .op5:hover::after {
     content: "Registro";
-    right:-3.5%;
+    right: -3.5%;
 }
 
-a.instagram:hover::after{
+.instagram:hover::after {
     content: "Instagram";
-    top:-40px;
-    left:29%;
+    top: -40px;
+    left: 29%;
     color: white;
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
 
-a.facebook:hover::after{
+.facebook:hover::after {
     content: "Facebook";
-    top:-40px;
-    left:42.2%;
+    top: -40px;
+    left: 42.2%;
     color: white;
-    background: #3b5998 
+    background: #3b5998
 }
 
-a.twitter:hover::after{
+.twitter:hover::after {
     content: "Twitter";
-    top:-40px;
-    left:55.2%;
+    top: -40px;
+    left: 55.2%;
     color: white;
     background: #1DA1F2
 }
 
-a.outlook:hover::after{
+.outlook:hover::after {
     content: "Outlook";
-    top:-40px;
-    left:70%;
+    top: -40px;
+    left: 70%;
     color: white;
     background: #0072C6
 }
 
 
-/*Log-in icon and footer icons*/
-#log-in-btn , #social-media-icon{
+/*Tamaño de los iconos de log-in y redes sociales*/
+#log-in-btn, #social-media-icon {
     position: relative;
-    right:2%;
-    height:40px;
+    height: 40px;
     width: 40px;
 }
 
-#register-button{
+#register-button {
     height: 25px;
     width: 55px;
-    right:5%;
+    right: 5%;
 }
 
 
-#main-content{
-    background-image: linear-gradient(to right top, #dbf9f0, #cbf2e6, #bcebdd, #ace3d3, #9cdcc9);
+#main-content {
+    background: linear-gradient(to right top, #dbf9f0, #cbf2e6, #bcebdd, #ace3d3, #9cdcc9);
 }
 
 /*Footer part*/
-footer{
-    padding:35px;
+footer {
+    padding: 35px;
     height: 23vh;
 }
 
-#creator-information{
+/*Texto con el cliente y desarrollador*/
+#creator-information {
     position: relative;
-    top:18.5%;
+    top: 18.5%;
     width: 20%;
     text-align: start;
-
 }
 
-#creator-information span{
+#creator-information span {
     color: white;
 }
 
-/*Social media container*/
-#social-media{
+/*Contenedor de las redes sociales*/
+#social-media {
     display: flex;
     position: relative;
-    top:60px;
+    top: 60px;
     gap: 150px;
     justify-content: center;
 }
 
-/*Footer logo*/
-#logo-2{
+/*Logo del pie de pagina*/
+#logo-2 {
     position: relative;
-    bottom:55%;
-    left:38%;
-    height:80px;
+    bottom: 55%;
+    left: 38%;
+    height: 80px;
     width: 80px;
 }
 
-.outlook-icon{
+.outlook-icon {
     height: 40px;
     width: 75px;
-
 }
-/*Button style*/
-.generic-btn{
+
+/*Botón que se encuentra en las distintas paginas*/
+.generic-btn {
     background-color: #1A512C;
     font-size: 16px;
     color: white;
@@ -185,4 +199,3 @@ footer{
     border-radius: 30px;
     border-style: none;
 }
-
